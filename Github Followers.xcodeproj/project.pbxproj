@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23132F832B692D1E004910FC /* GFErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23132F822B692D1E004910FC /* GFErrorMessage.swift */; };
 		2377861F2B60AB2A00FA3696 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2377861E2B60AB2A00FA3696 /* AppDelegate.swift */; };
 		237786212B60AB2A00FA3696 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237786202B60AB2A00FA3696 /* SceneDelegate.swift */; };
 		237786232B60AB2A00FA3696 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237786222B60AB2A00FA3696 /* SearchVC.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23132F822B692D1E004910FC /* GFErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFErrorMessage.swift; sourceTree = "<group>"; };
 		2377861B2B60AB2A00FA3696 /* Github Followers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Github Followers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2377861E2B60AB2A00FA3696 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		237786202B60AB2A00FA3696 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23132F812B692CF1004910FC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				23132F822B692D1E004910FC /* GFErrorMessage.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		237786122B60AB2A00FA3696 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +86,7 @@
 		2377861D2B60AB2A00FA3696 /* Github Followers */ = {
 			isa = PBXGroup;
 			children = (
+				23132F812B692CF1004910FC /* Utilities */,
 				2397504D2B67808C00BDF68B /* Models */,
 				2397504A2B677FE600BDF68B /* Services */,
 				239750492B674F8300BDF68B /* Components */,
@@ -208,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2397504C2B677FF500BDF68B /* NetworkManager.swift in Sources */,
+				23132F832B692D1E004910FC /* GFErrorMessage.swift in Sources */,
 				237786372B60B74200FA3696 /* GFTextField.swift in Sources */,
 				237786332B60B09200FA3696 /* FavoriteListVC.swift in Sources */,
 				237786352B60B64500FA3696 /* GFButton.swift in Sources */,
