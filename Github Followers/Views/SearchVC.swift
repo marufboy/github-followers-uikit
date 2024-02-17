@@ -90,3 +90,9 @@ extension SearchVc: UITextFieldDelegate{
     }
 }
 
+#Preview {
+    let vc = SearchVc()
+    
+    return vc
+}
+

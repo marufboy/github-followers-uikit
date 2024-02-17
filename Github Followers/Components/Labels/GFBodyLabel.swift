@@ -33,3 +33,10 @@ class GFBodyLabel: UILabel {
         translatesAutoresizingMaskIntoConstraints   = false
     }
 }
+
+#Preview {
+    let label = GFBodyLabel(textAlignment: .center)
+    label.text = "lorem ipsum"
+    
+    return label
+}

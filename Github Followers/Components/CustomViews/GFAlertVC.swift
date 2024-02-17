@@ -103,3 +103,9 @@ class GFAlertVC: UIViewController {
     }
     
 }
+
+#Preview {
+    let vc = GFAlertVC()
+    
+    return vc
+}

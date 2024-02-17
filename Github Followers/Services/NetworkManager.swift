@@ -50,7 +50,7 @@ class NetworkManager {
         task.resume()
     }
     
-    func getUserInfo(for username: String, completion: @escaping (Result<[UserModel], GFErrorMessage>) -> Void) {
+    func getUserInfo(for username: String, completion: @escaping (Result<UserModel, GFErrorMessage>) -> Void) {
         //TODO: base endpoint
         let endpoint = baseURL + "\(username)"
         
@@ -76,8 +76,9 @@ class NetworkManager {
             
             do {
                 let decoder = JSONDecoder()
-                decoder.keyDecodingStrategy = .convertFromSnakeCase
-                let user = try decoder.decode([UserModel].self, from: data)
+                decoder.keyDecodingStrategy     = .convertFromSnakeCase
+                decoder.dateDecodingStrategy    = .iso8601
+                let user = try decoder.decode(UserModel.self, from: data)
                 completion(.success(user))
             } catch {
                 completion(.failure(.invalidData))

@@ -1,13 +1,13 @@
 //
-//  GFTitleLabel.swift
+//  GFSecondaryTitleLabel.swift
 //  Github Followers
 //
-//  Created by Muhammad Afif Maruf on 29/01/24.
+//  Created by Muhammad Afif Maruf on 09/02/24.
 //
 
 import UIKit
 
-class GFTitleLabel: UILabel {
+class GFSecondaryTitleLabel: UILabel {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -18,25 +18,19 @@ class GFTitleLabel: UILabel {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(textAlignment: NSTextAlignment, fontSize: CGFloat){
+    init(fontSize: CGFloat){
         super.init(frame: .zero)
-        self.textAlignment = textAlignment
-        self.font = UIFont.systemFont(ofSize: fontSize, weight: .bold)
+        font = UIFont.systemFont(ofSize: fontSize, weight: .medium)
         configureUI()
     }
     
     private func configureUI() {
-        textColor                                   = .label
+        textColor                                   = .secondaryLabel
         adjustsFontSizeToFitWidth                   = true
-        minimumScaleFactor                          = 0.9
+        minimumScaleFactor                          = 0.90
         lineBreakMode                               = .byTruncatingTail
         translatesAutoresizingMaskIntoConstraints   = false
     }
-}
-
-#Preview {
-    let label = GFTitleLabel(textAlignment: .center, fontSize: 18)
-    label.text = "lorem ipsum"
     
-    return label
+    
 }
