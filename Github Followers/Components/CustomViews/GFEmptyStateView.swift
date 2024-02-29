@@ -27,8 +27,7 @@ class GFEmptyStateView: UIView {
     }
     
     private func configureUI() {
-        addSubview(messageLabel)
-        addSubview(logoImageView)
+        addSubviews(messageLabel, logoImageView)
         configureMessageLabel()
         configureLogoImageView()
     }
@@ -62,6 +61,4 @@ class GFEmptyStateView: UIView {
             logoImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: logoBottomConstant)
         ])
     }
-}
-
 }
